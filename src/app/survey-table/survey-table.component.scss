@@ -1,4 +1,4 @@
-/* Table Container */
+
 table {
     width: 100%;
     border-collapse: separate;
@@ -10,7 +10,6 @@ table {
     overflow: hidden;
   }
   
-  /* Table Headers */
   th {
     background-color: #6200ea;
     color: #fff;
@@ -23,7 +22,6 @@ table {
     font-size: 16px;
   }
   
-  /* Table Cells */
   td {
     padding: 15px;
     border-bottom: 1px solid #e0e0e0;
@@ -31,7 +29,6 @@ table {
     color: #333;
   }
   
-  /* Table Rows */
   tr:nth-child(even) {
     background-color: #fafafa;
   }
@@ -41,19 +38,19 @@ table {
     cursor: pointer;
   }
   
-  /* First Column Styling */
+
   td:first-child,
   th:first-child {
     padding-left: 20px;
   }
   
-  /* Last Column Styling */
+
   td:last-child,
   th:last-child {
     padding-right: 20px;
   }
   
-  /* Responsive Table */
+
   @media screen and (max-width: 768px) {
     table,
     thead,
