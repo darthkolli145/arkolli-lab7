@@ -1,4 +1,3 @@
-/* Form Container */
 form {
     max-width: 600px;
     margin: 50px auto;
@@ -9,7 +8,6 @@ form {
     font-family: 'Roboto', sans-serif;
   }
   
-  /* Form Labels */
   label {
     display: block;
     margin-bottom: 6px;
@@ -17,7 +15,6 @@ form {
     color: #333;
   }
   
-  /* Input Fields */
   input[type="text"],
   input[type="email"],
   input[type="number"],
@@ -31,7 +28,6 @@ form {
     transition: border-color 0.3s ease;
   }
   
-  /* Input Focus States */
   input:focus,
   textarea:focus {
     border-color: #6200ea;
@@ -39,7 +35,6 @@ form {
     box-shadow: 0 0 0 2px rgba(98, 0, 234, 0.2);
   }
   
-  /* Submit Button */
   button {
     width: 100%;
     background-color: #6200ea;
@@ -52,34 +47,30 @@ form {
     transition: background-color 0.3s ease;
   }
   
-  /* Button Hover State */
   button:hover:not(:disabled) {
     background-color: #3700b3;
   }
   
-  /* Disabled Button State */
   button:disabled {
     background-color: #bdbdbd;
     cursor: not-allowed;
   }
   
-  /* Error Messages */
+
   small {
     color: #d32f2f;
   }
   
-  /* Form Grouping */
   div {
     margin-bottom: 20px;
   }
   
-  /* Placeholder Text */
+
   input::placeholder,
   textarea::placeholder {
     color: #9e9e9e;
   }
   
-  /* Input Animation */
   input,
   textarea {
     position: relative;
