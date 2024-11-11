@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { SurveyFormComponent } from './survey-form/survey-form.component';
+import { SurveyTableComponent } from './survey-table/survey-table.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [SurveyFormComponent, SurveyTableComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'arkolli-lab7';
+  surveyResponses: any[] = [];
+
+  onSurveySubmitted(response: any) {
+    this.surveyResponses.push(response);
+  }
 }
