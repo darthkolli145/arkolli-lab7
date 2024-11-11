@@ -3,7 +3,7 @@
       <label for="name">Name:</label>
       <input id="name" formControlName="name">
       <div *ngIf="name?.invalid && name?.touched">
-        <small *ngIf="name?.errors?.['required']">Name is required.</small>
+        <small *ngIf="name?.errors?.['required']">Please enter a name.</small>
       </div>
     </div>
   
@@ -11,8 +11,8 @@
       <label for="email">Email:</label>
       <input id="email" formControlName="email">
       <div *ngIf="email?.invalid && email?.touched">
-        <small *ngIf="email?.errors?.['required']">Email is required.</small>
-        <small *ngIf="email?.errors?.['email']">Invalid email format.</small>
+        <small *ngIf="email?.errors?.['required']">Please enter an email.</small>
+        <small *ngIf="email?.errors?.['email']">Email must be valid.</small>
       </div>
     </div>
   
@@ -20,8 +20,8 @@
       <label for="age">Age:</label>
       <input id="age" type="number" formControlName="age">
       <div *ngIf="age?.invalid && age?.touched">
-        <small *ngIf="age?.errors?.['required']">Age is required.</small>
-        <small *ngIf="age?.errors?.['min']">Age must be greater than 0.</small>
+        <small *ngIf="age?.errors?.['required']">Please enter an age.</small>
+        <small *ngIf="age?.errors?.['min']">Age must be valid.</small>
       </div>
     </div>
   
@@ -29,7 +29,7 @@
       <label for="feedback">Feedback:</label>
       <textarea id="feedback" formControlName="feedback"></textarea>
       <div *ngIf="feedback?.invalid && feedback?.touched">
-        <small *ngIf="feedback?.errors?.['required']">Feedback is required.</small>
+        <small *ngIf="feedback?.errors?.['required']">Please enter feedback.</small>
       </div>
     </div>
   
