@@ -1,1 +1,38 @@
-<p>survey-form works!</p>
+<form [formGroup]="surveyForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" formControlName="name">
+      <div *ngIf="name?.invalid && name?.touched">
+        <small *ngIf="name?.errors?.['required']">Name is required.</small>
+      </div>
+    </div>
+  
+    <div>
+      <label for="email">Email:</label>
+      <input id="email" formControlName="email">
+      <div *ngIf="email?.invalid && email?.touched">
+        <small *ngIf="email?.errors?.['required']">Email is required.</small>
+        <small *ngIf="email?.errors?.['email']">Invalid email format.</small>
+      </div>
+    </div>
+  
+    <div>
+      <label for="age">Age:</label>
+      <input id="age" type="number" formControlName="age">
+      <div *ngIf="age?.invalid && age?.touched">
+        <small *ngIf="age?.errors?.['required']">Age is required.</small>
+        <small *ngIf="age?.errors?.['min']">Age must be greater than 0.</small>
+      </div>
+    </div>
+  
+    <div>
+      <label for="feedback">Feedback:</label>
+      <textarea id="feedback" formControlName="feedback"></textarea>
+      <div *ngIf="feedback?.invalid && feedback?.touched">
+        <small *ngIf="feedback?.errors?.['required']">Feedback is required.</small>
+      </div>
+    </div>
+  
+    <button type="submit" [disabled]="surveyForm.invalid">Submit</button>
+  </form>
+  
