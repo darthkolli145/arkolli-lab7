@@ -17,7 +17,7 @@
     </div>
   
     <div>
-      <label for="age">Age:</label>
+      <label for="age">ID#:</label>
       <input id="age" type="number" formControlName="age">
       <div *ngIf="age?.invalid && age?.touched">
         <small *ngIf="age?.errors?.['required']">Please enter an ID#.</small>
@@ -29,7 +29,7 @@
       <label for="feedback">Feedback:</label>
       <textarea id="feedback" formControlName="feedback"></textarea>
       <div *ngIf="feedback?.invalid && feedback?.touched">
-        <small *ngIf="feedback?.errors?.['required']">Please enter feedback.</small>
+        <small *ngIf="feedback?.errors?.['required']">Please enter a comment.</small>
       </div>
     </div>
   
