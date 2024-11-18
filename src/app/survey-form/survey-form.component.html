@@ -20,8 +20,8 @@
       <label for="age">Age:</label>
       <input id="age" type="number" formControlName="age">
       <div *ngIf="age?.invalid && age?.touched">
-        <small *ngIf="age?.errors?.['required']">Please enter an age.</small>
-        <small *ngIf="age?.errors?.['min']">Age must be valid.</small>
+        <small *ngIf="age?.errors?.['required']">Please enter an ID#.</small>
+        <small *ngIf="age?.errors?.['min']">ID# must be valid.</small>
       </div>
     </div>
   

@@ -4,16 +4,16 @@
         <tr>
           <th>Name</th>
           <th>Email</th>
-          <th>Age</th>
-          <th>Feedback</th>
+          <th>ID#</th>
+          <th>Comment</th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let response of surveyResponses">
           <td data-label="Name">{{ response.name }}</td>
           <td data-label="Email">{{ response.email }}</td>
-          <td data-label="Age">{{ response.age }}</td>
-          <td data-label="Feedback">{{ response.feedback }}</td>
+          <td data-label="ID#">{{ response.age }}</td>
+          <td data-label="Comment">{{ response.feedback }}</td>
         </tr>
       </tbody>
     </table>
