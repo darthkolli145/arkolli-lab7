@@ -26,7 +26,7 @@
     </div>
   
     <div>
-      <label for="feedback">Feedback:</label>
+      <label for="feedback">Comment:</label>
       <textarea id="feedback" formControlName="feedback"></textarea>
       <div *ngIf="feedback?.invalid && feedback?.touched">
         <small *ngIf="feedback?.errors?.['required']">Please enter a comment.</small>
